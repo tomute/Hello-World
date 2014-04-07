@@ -1,38 +1,16 @@
 package com.example;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import static org.hamcrest.CoreMatchers.*;
+import static org.junit.Assert.*;
 
-/**
- * Unit test for simple App.
- */
-public class TravisSampleTest extends TestCase
+import org.junit.Test;
+
+public class TravisSampleTest
 {
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public TravisSampleTest( String testName )
-    {
-        super( testName );
-    }
-
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( TravisSampleTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
+    @Test
     public void testAdd()
     {
         TravisSample sut = new TravisSample();
-        assertEquals(5, sut.add(3, 2));
+        assertThat(sut.add(4, 2), is(6));
     }
 }
