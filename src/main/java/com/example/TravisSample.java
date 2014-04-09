@@ -6,4 +6,8 @@ public class TravisSample {
         return x + y;
     }
 
+    int subtract(int x, int y) {
+        return x - y;
+    }
+    
 }
