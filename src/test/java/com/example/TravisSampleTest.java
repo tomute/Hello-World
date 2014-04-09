@@ -3,14 +3,30 @@ package com.example;
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class TravisSampleTest
 {
+
+    TravisSample sut;
+
+    @Before
+    public void setUp()
+    {
+        sut = new TravisSample();
+    }
+
     @Test
     public void testAdd()
     {
-        TravisSample sut = new TravisSample();
         assertThat(sut.add(4, 2), is(6));
     }
+
+    @Test
+    public void testSubtract()
+    {
+        assertThat(sut.subtract(4, 2), is(2));
+    }
+
 }
