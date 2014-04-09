@@ -20,7 +20,7 @@ public class TravisSampleTest
     @Test
     public void testAdd()
     {
-        assertThat(sut.add(4, 2), is(6));
+        assertThat(sut.add(5, 2), is(7));
     }
 
     @Test
