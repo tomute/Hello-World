@@ -28,5 +28,11 @@ public class TravisSampleTest
     {
         assertThat(sut.subtract(4, 2), is(2));
     }
+    
+    @Test
+    public void testMultiply()
+    {
+        assertThat(sut.multiply(3, 2), is(6));
+    }
 
 }
