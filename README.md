@@ -7,4 +7,4 @@ Now testing to use Travis CI and Coveralls.
 
 [![Build Status](https://travis-ci.org/tomute/Hello-World.svg?branch=master)](https://travis-ci.org/tomute/Hello-World)
 
-[![Coverage Status](https://coveralls.io/repos/tomute/Hello-World/badge.png?branch=master)](https://coveralls.io/r/tomute/Hello-World?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/tomute/Hello-World/badge.svg?branch=master)](https://coveralls.io/github/tomute/Hello-World?branch=master)
